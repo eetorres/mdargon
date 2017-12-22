@@ -116,8 +116,8 @@ int main (int argc, char **argv) {
     //
     cout<<"Box side \t= \t"<<L<<endl;
     cout<<"Volume \t\t= \t"<<L*L*L<<endl;
-    cout<<"Density \t\t= \t"<<rho<<endl;
-    cout<<"Lattice constant \t= \t"<<lattice_contant<<endl<<endl;
+    cout<<"Density \t= \t"<<rho<<endl;
+    cout<<"Lattice \t= \t"<<lattice_contant<<endl<<endl;
     cout<<"N      U        K        E"<<endl;
     //
     // mode of the display
