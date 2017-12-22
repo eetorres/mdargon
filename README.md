@@ -1,6 +1,8 @@
 # mdargon
 A basic Molecular Dynamics (MD) simulation of argon using OpenGL
 
+<img src="https://github.com/eetorres/mdargon/blob/master/screenshot.png?raw=true" alt="Main GUI"> 
+
 Compile with:
 
  > make
