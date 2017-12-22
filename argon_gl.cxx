@@ -114,10 +114,10 @@ int main (int argc, char **argv) {
     // file to store the energies
     argon_energy.open("argon_energy.dat");
     //
-    cout<<"Lado del volumen \t= \t"<<L<<endl;
-    cout<<"Volumen \t\t= \t"<<L*L*L<<endl;
-    cout<<"Densidad \t\t= \t"<<rho<<endl;
-    cout<<"Constante de red \t= \t"<<lattice_contant<<endl<<endl;
+    cout<<"Box side \t= \t"<<L<<endl;
+    cout<<"Volume \t\t= \t"<<L*L*L<<endl;
+    cout<<"Density \t\t= \t"<<rho<<endl;
+    cout<<"Lattice constant \t= \t"<<lattice_contant<<endl<<endl;
     cout<<"N      U        K        E"<<endl;
     //
     // mode of the display
