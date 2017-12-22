@@ -1,6 +1,7 @@
 /*
    md3d_argon.cxx is a basic Molecular Dynamics
    simulation of 3d box with argon
+   https://github.com/eetorres/mdargon
 */
 
 #include <cmath>

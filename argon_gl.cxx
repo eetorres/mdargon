@@ -20,7 +20,7 @@
 // included in all  the copies  or  modifications on this code. I will 
 // be very grateful  to  receive your feedbacks.   For any suggestion, 
 // modification or bugs. Don't hesitate  to  contact me.  Get the last 
-// version at wwww.gnu-science.org
+// version at https://github.com/eetorres/mdargon
 
 // C++ libraries
 #include <unistd.h>
