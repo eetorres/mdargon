@@ -1,4 +1,4 @@
-// Copyrigth 2008 by Edmanuel Torres A. (eetorres@gmail.com)
+// Copyrigth 2008-2017 by Edmanuel Torres A. (eetorres@gmail.com)
 //
 // This software is  free  software;  you  can  redistribute it and/or
 // modify it  under  the  terms  of  the   GNU  Library General Public
@@ -16,10 +16,10 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 // USA.
 //
-// The above copyright  notice  and  this  permission notice should be 
-// included in all  the copies  or  modifications on this code. I will 
-// be very grateful  to  receive your feedbacks.   For any suggestion, 
-// modification or bugs. Don't hesitate  to  contact me.  Get the last 
+// The above copyright  notice  and  this  permission notice should be
+// included in all  the copies  or  modifications on this code. I will
+// be very grateful  to  receive your feedbacks.   For any suggestion,
+// modification or bugs. Don't hesitate to contact me. Get the lastest
 // version at https://github.com/eetorres/mdargon
 
 // C++ libraries
