@@ -53,10 +53,10 @@ void write_coordinates(void){
 void motion(void){
     //
     velocityVerlet(dt);
-    //cout <<" T: "<< instantaneousTemperature();
+    //cout <<" T: "<< instantTemperature();
     //cout <<" U: "<< PotentialEnergy();
     //cout <<" K: "<< KineticEnergy() << '\n';
-    //cout <<" Energia total : "<< KineticEnergy()+PotentialEnergy() << " (por particula)\n";
+    //cout <<" Total energy : "<< KineticEnergy()+PotentialEnergy() << " (per particle)\n";
     steps++;
     if((steps%sample_energy)==0){
         argon_energy<<steps<<"  "<<potentialEnergy()<<"  "<<kineticEnergy()<<"  "<<kineticEnergy()+potentialEnergy()<<endl;
@@ -95,7 +95,7 @@ void display(void) {
     motion();
     //
     glutSwapBuffers();
-    // retardo de tiempo de 50 microsegundos
+    // delay of 50 microseconds
     usleep(500);
 }
 

@@ -23,7 +23,7 @@ real dt = 0.001;        // time step
 real vMax = 0.8;        // maximun velocity compontet
 real rho  = 0.95;       // particle density
 real lattice_contant;   // lattice constant from the box side
-real L;                 // Box size from the density
+real L;                 // box size from the density
 real L_2;
 
 ofstream argon_xyz;
@@ -44,11 +44,9 @@ inline real pbc(real);
 // Initial position in the cubic box
 void initialize() {
     // time step
-    dt = 0.005;            
-
+    dt = 0.005;
     // number of particles in each coordinate direction
     int n = int(ceil(pow(real(N), (real)(1.0/3) )));
-        
     // Compute the dimension of the box side
     L = pow((real)real(N)/rho,(real)1.0/3.0); 
     L_2 = L/2;
@@ -86,15 +84,15 @@ void initialize() {
 // Potential energy of a particle i due the particle j to a distance r
 real computePotential(real r2){
     real ir2 = 1.0/r2;
-    // Lennard-Jones (LJ) potential
-    return(4.0 * (pow(ir2, 6) - pow(ir2, 3)) );  
+    // Lennard-Jones (LJ) potential for argon
+    return(4.0 * (pow(ir2, 6) - pow(ir2, 3)) );
 }
 
 // Force between particles separated by a distance r
 real computeForce(real r2){
     real ir = sqrt(1.0/r2);
-    // Gradien ofd  the LJ potential
-    return(24 * (2 * pow(ir, 13) - pow(ir, 7))); 
+    // Gradien of  the LJ potential
+    return(24 * (2 * pow(ir, 13) - pow(ir, 7)));
 }
 
 // Compute the acelerations
@@ -139,7 +137,7 @@ void velocityVerlet(real dt) {
 }
 
 // Compute the instant temperature
-real instantaneousTemperature() {
+real instantTemperature() {
     real sum = 0;
     for (int i = 0; i < N; i++)
         for (int k = 0; k < 3; k++)
@@ -181,7 +179,7 @@ inline real pbc(real _x){
       _x_pbc = (_x - L);
     }else if(_x < -L_2){
       _x_pbc = (_x + L);
-    }else{ return _x;} // si esta dentro de la caja se deja asi
+    }else{ return _x;} // do not change if it is inside
     return _x_pbc;
 }
 
